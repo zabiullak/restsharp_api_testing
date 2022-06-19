@@ -20,7 +20,7 @@ namespace API.Tests
         const string BASE_URL = "https://reqres.in";
         string TestDataFolderLocation = Path.GetFullPath(@"../../../TestData/");
 
-        [TestMethod]
+        [Test]
         public async Task GetUsersLists()
         {
             RestResponse res = await API_calls.GetUsersData(BASE_URL);
